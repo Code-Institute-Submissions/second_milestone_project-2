@@ -5,18 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Irish history map and timeline</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
-  <h1 id="IntroTitle">Irish history Map and Timeline</h1>
+  <div id="TitleBar">
+    <h1 id="IntroTitle" class="text-center">Irish history Map and Timeline</h1>
+  </div>
+
+
+  <div id="map"></div>
 
   <script>
+    function initMap(){
+      // Map options
+      var options = {
+        zoom:7,
+        center:{lat:54.5973,lng:-5.9301}
+      }
+      // New Map
+      var map = new google.maps.Map(document.getElementById('map'), options);
 
+      // Markers
+      var marker = new google.maps.Marker({
+        position:{}
+      })
+    }
   </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0B7b7oEAHhTZ4zVancoCrjz6ZxRqlz48&callback=initMap">
+  </script>
+
 </body>
 
 </html>

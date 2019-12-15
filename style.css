@@ -1,3 +1,20 @@
-#IntroTitle {
-  font-family:  'Courier Prime';
+#TitleBar {
+  background-color: #3D6649;
+  border: 0px;
+  padding: 10px;
+  margin: 0px;
 }
+
+#IntroTitle {
+  font-family: 'Courier Prime';
+  color: #FFF;
+  font-size: 16pt;
+}
+
+
+
+#map {
+    height: 800px;
+    width: 100%;
+    margin: 0px;
+ }
