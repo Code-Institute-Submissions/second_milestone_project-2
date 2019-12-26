@@ -1,29 +1,89 @@
-function initMap(){
+function initMap() {
   // Map options
   var options = {
-    zoom:7,
-    center:{lat:54.5973,lng:-5.9301}
+    zoom: 7,
+    center: {
+      lat: 54.5973,
+      lng: -5.9301
+    }
   }
-  // New Map
+
   var map = new google.maps.Map(document.getElementById('map'), options);
 
-  // Markers
-  var marker = new google.maps.Marker({
-    position:{}
+  $('#ww1').click(function() {
+    var marker = new google.maps.Marker({
+      position: {
+        lat: 54.599105,
+        lng: -5.899962
+      },
+      map: map
+    });
+    map.setZoom(15);
+    map.panTo(marker.position);
   })
-  var markers = [
-    {
-      coords:{lat:42.4668,lng:-70.9495},
-      iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-      content:'<h1>Lynn MA</h1>'
-    },
-    {
-      coords:{lat:42.8584,lng:-70.9300},
-      content:'<h1>Amesbury MA</h1>'
-    },
-    {
-      coords:{lat:42.7762,lng:-71.0773}
-    }
-  ];
+
+
+
+
+  $('#partition').click(function() {
+    var marker = new google.maps.Marker({
+      position: {
+        lat: 54.113769,
+        lng: -6.365088
+      },
+      map: map
+    });
+    map.setZoom(12);
+    map.panTo(marker.position);
+  })
+
+  $('#ww1').click(function() {
+    var marker = new google.maps.Marker({
+      position: {
+        lat: 54.599105,
+        lng: -5.899962
+      },
+      map: map
+    });
+    map.setZoom(15);
+    map.panTo(marker.position);
+  })
+
+  $('#Fianna Fáil').click(function() {
+    var marker = new google.maps.Marker({
+      position: {
+        lat: 54.599105,
+        lng: -5.899962
+      },
+      map: map
+    });
+    map.setZoom(15);
+    map.panTo(marker.position);
+  })
+
+  $('#ww1').click(function() {
+    var marker = new google.maps.Marker({
+      position: {
+        lat: 54.599105,
+        lng: -5.899962
+      },
+      map: map
+    });
+    map.setZoom(15);
+    map.panTo(marker.position);
+  })
+
+  $('#ww1').click(function() {
+    var marker = new google.maps.Marker({
+      position: {
+        lat: 54.599105,
+        lng: -5.899962
+      },
+      map: map
+    });
+    map.setZoom(15);
+    map.panTo(marker.position);
+  })
+
 
 }

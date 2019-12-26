@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 
@@ -18,62 +19,75 @@
     <h1 id="IntroTitle" class="text-center">Irish history Map and Timeline</h1>
   </div>
 
-  <h1>20th Century Northern Ireland, <span>1900–2000</span></h1>
-<div class="flex-parent">
-	<div class="input-flex-container">
-		<div class="input">
-			<span data-year="1914-18" data-info="World War I"></span>
-		</div>
-		<div class="input">
-			<span data-year="1919-21" data-info="Anglo-Irish war and partition"></span>
-		</div>
-		<div class="input active">
-			<span data-year="1921" data-info="Creation of Northern Ireland"></span>
-		</div>
-		<div class="input">
-			<span data-year="1932" data-info="Stormont built"></span>
-		</div>
-		<div class="input">
-			<span data-year="1937" data-info="Éire constitution"></span>
-		</div>
-		<div class="input">
-			<span data-year="1960" data-info="magnetic stripe card"></span>
-		</div>
-		<div class="input">
-			<span data-year="1970" data-info="wireless LAN"></span>
-		</div>
-		<div class="input">
-			<span data-year="1980" data-info="flash memory"></span>
-		</div>
-		<div class="input">
-			<span data-year="1990" data-info="World Wide Web"></span>
-		</div>
-		<div class="input">
-			<span data-year="2000" data-info="Google AdWords"></span>
-		</div>
-	</div>
-	<div class="description-flex-container">
-		<p>36th Ulster division suffers serious losses at the Battle of the Somme in 1916, a date that enters both Nationalist and Unionist popular memory for very different reasons.</p>
-		<p>Because every kid should get to be Tarzan for a day.</p>
-		<p class="active">And the world rejoiced.</p>
-		<p>Because building roads is inconvenient.</p>
-		<p>Ain’t nobody got time to rake.</p>
-		<p>Because paper currency is for noobs.</p>
-		<p>Nobody likes cords. Nobody.</p>
-		<p>Brighter than glow memory.</p>
-		<p>To capitalize on an as-yet nascent market for cat photos.</p>
-		<p>Because organic search rankings take work.</p>
-	</div>
-</div>
+  <h1 class="quicksand subtitle">20th Century Northern Ireland </h1>
+  <div class="flex-parent quicksand">
+    <div class="input-flex-container">
+      <div id="ww1" class="input">
+        <span data-year="1914-18" data-info="World War I"></span>
+      </div>
+      <div id="partition" class="input">
+        <span data-year="1919-21" data-info="Anglo-Irish war and partition"></span>
+      </div>
+      <div id="Fianna Fáil"class="input active">
+        <span data-year="1927" data-info="Fianna Fáil elected in Irish Free State"></span>
+      </div>
+      <div class="input">
+        <span data-year="1932" data-info="Stormont built"></span>
+      </div>
+      <div class="input">
+        <span data-year="1937" data-info="Éire constitution"></span>
+      </div>
+      <div class="input">
+        <span data-year="1941" data-info="Belfast Blitz"></span>
+      </div>
+      <div class="input">
+        <span data-year="1970" data-info="wireless LAN"></span>
+      </div>
+      <div class="input">
+        <span data-year="1980" data-info="flash memory"></span>
+      </div>
+      <div class="input">
+        <span data-year="1990" data-info="World Wide Web"></span>
+      </div>
+      <div class="input">
+        <span data-year="2000" data-info="Google AdWords"></span>
+      </div>
+    </div>
+    <div class="description-flex-container">
+      <p>36th Ulster division suffers serious losses at the Battle of the Somme in 1916, a date that enters both Nationalist and Unionist popular memory for very different reasons.</p>
+      <p>The Government of Ireland Act of 1920 was intended to make two sub-states of the United Kingdom in both Ireland and Northern Ireland, but after Sinn Féin won a majority in Ireland in the general election of 1918, a war broke out between
+        Irish republicans and the British forces in Ireland. When the war ended, a new 'Free State' had been established in 26 counties of Ireland, but the 6 north-eastern counties that make up Northern Ireland opted to remain part of the UK.</p>
+      <p class="active">Northern Ireland was created through an act that was never intended to be permanent, and this impermanence contributed to some of the fundamental instabilities of the state.</p>
+      <p>Because building roads is inconvenient.</p>
+      <p>Ain’t nobody got time to rake.</p>
+      <p>Because paper currency is for noobs.</p>
+      <p>Nobody likes cords. Nobody.</p>
+      <p>Brighter than glow memory.</p>
+      <p>To capitalize on an as-yet nascent market for cat photos.</p>
+      <p>Because organic search rankings take work.</p>
+    </div>
+  </div>
 
 
 
   <div id="map"></div>
 
-<script src="maps.js"></script>
-<script src="timeline.js"></script>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0B7b7oEAHhTZ4zVancoCrjz6ZxRqlz48&callback=initMap">
+  <footer class="page-footer quicksand">
+    <div class="row">
+      <div class="col-3 footer text-center">
+        <h4> Facebook </h4>
+      </div>
+      <div class="col-6 footer footer-copyright text-center py-3"> 2019 Copyright
+        </div>
+        <div class="col-3 footer text-center">
+          <h4> Twitter </h4>
+        </div>
+        </div>
+  </footer>
+
+  <script src="maps.js"></script>
+  <script src="timeline.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0B7b7oEAHhTZ4zVancoCrjz6ZxRqlz48&callback=initMap">
   </script>
 
 </body>
