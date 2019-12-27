@@ -23,8 +23,6 @@ function initMap() {
   })
 
 
-
-
   $('#partition').click(function() {
     var marker = new google.maps.Marker({
       position: {
