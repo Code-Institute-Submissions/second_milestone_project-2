@@ -39,7 +39,7 @@ There were several teething problems early on in the project. I could not get th
 
 User testing exposed some potential flaws. The text box for the markers had to be amended to ensure a comfortable user experience, while the lengths of the titles for each interactive aspect of the timeline had to be amended to make sure there was no overlap at any viewport size.
 
-
+ 
 Deployment:
 
 I deployed the project through GitHub pages. The changes from the conceptual version to the deployed version were relatively minimal, given the simple nature of the project (see original wireframe drawing contained in planning/wireframe.jpg).
