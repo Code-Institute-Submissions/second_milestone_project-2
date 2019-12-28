@@ -17,11 +17,34 @@
     margin: 0px;
  }
 
- @media (max-width: 850px) {
-   .subtitle {
-    font-
-   }
+#mapscontentbox {
+  max-width: 400px;
+}
+
+ #contentheader {
+   font-family: "quicksand";
+   font-size: 16px;
+   text-align: center;
  }
+
+ #contenttext {
+   font-family: "quicksand";
+   font-size: 12px;
+   text-align: center;
+ }
+
+ #contentpic {
+   padding-top: 12px;
+   max-width: 100%;
+ }
+
+.linkclass {
+  color: white;
+}
+
+.linkclass:hover {
+  color: black;
+}
 
 /*font*/
 
